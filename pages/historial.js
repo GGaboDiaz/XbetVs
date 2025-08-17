@@ -1,0 +1,1 @@
+export default () => <main className='min-h-screen p-6'><h2 className='text-2xl font-bold text-[var(--gold)]'>Historial</h2><div className='card mt-4'>Tus apuestas recientes aparecerán aquí.</div></main>

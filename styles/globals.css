@@ -1,0 +1,30 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* App theme */
+:root {
+  --bg: #0b0f1a;
+  --card: #121826;
+  --text: #ffffff;
+  --muted: #9aa4b2;
+  --gold: #d4af37;
+}
+
+html, body, #__next { height: 100%; }
+body { background: var(--bg); color: var(--text); }
+
+.card {
+  @apply bg-[#121826] rounded-2xl p-5 shadow-soft;
+}
+
+.btn {
+  @apply rounded-2xl px-5 py-3 font-semibold text-center;
+}
+
+.btn-gold { @apply bg-[#d4af37] text-black; }
+.btn-dark { @apply bg-[#1a2333] text-white; }
+.input {
+  @apply w-full rounded-2xl bg-[#0f1524] border border-[#1f2a44] px-4 py-3 text-white placeholder-[#7b8697] focus:outline-none focus:ring-2 focus:ring-[#d4af37]/50;
+}
